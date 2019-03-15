@@ -1,0 +1,57 @@
+*cow* *cow.vim* author: tenfyzhong
+
+This help file explains the cow Vim plugin.
+
+================================================================================
+Contents:
+0. Introduction -------------------------------------------- |cow-introduction|
+1. Install ------------------------------------------------- |cow-install|
+2. Usage --------------------------------------------------- |cow-usage|
+3. Mapping ------------------------------------------------- |cow-mapping|
+4. LICENSE ------------------------------------------------- |cow-license|
+
+================================================================================
+0. Introduction                                                *cow-introduction*
+cow (close other window) is a plugin to close other window no need to switch
+to it. It's very helpful to close the nerdtree/tagbar/preview/quickfix
+window.
+
+================================================================================
+1. Install                                                          *cow-install*
+I suggest you to use a plugin manager, such vim-plug or other.
+- [vim-plug](https://github.com/junegunn/vim-plug)
+  Plug 'tenfyzhong/cow.vim'
+
+- Manual
+  git clone https://github.com/tenfyzhong/cow.vim.git ~/.vim/bundle/cow.vim
+  echo 'set rtp+=~/.vim/bundle/cow.vim' >> ~/.vimrc
+  vim -c 'helptag ~/.vim/bundle/cow.vim/doc' -c qa!
+
+================================================================================
+2. Usage                                                              *cow-usage*
+You must mapping the |cow-mapping| first, and then call your mapping in the
+normal mode. For example, >
+  nmap <leader>ch <Plug>(cow-close-h)
+  nmap <leader>cj <Plug>(cow-close-j)
+  nmap <leader>ck <Plug>(cow-close-k)
+  nmap <leader>cl <Plug>(cow-close-l)
+<
+
+================================================================================
+3. Mapping                                                          *cow-mapping*
+                                                            *<Plug>(cow-close-h)*
+                                                            *<Plug>(cow-close-j)*
+                                                            *<Plug>(cow-close-k)*
+                                                            *<Plug>(cow-close-l)*
+`<Plug>(cow-close-h)`
+`<Plug>(cow-close-j)`
+`<Plug>(cow-close-k)`
+`<Plug>(cow-close-l)`
+Close the h/j/k/l window.
+
+
+================================================================================
+4. LICENSE                                                          *cow-license*
+MIT License Copyright (c) 2019 tenfyzhong
+
+" vim:ft=help:iskeyword+=-:iskeyword+=58:iskeyword+=#"
